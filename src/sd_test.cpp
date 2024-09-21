@@ -15,7 +15,7 @@ void setup() {
     Serial.println("SD init suceeded");
   }
   // NOTE: SD.h limits file names to 8 characters
-  dataFile = SD.open("aaaaaaaaa", FILE_WRITE);
+  dataFile = SD.open("data.bin", FILE_WRITE);
   if (dataFile) {
     Serial.println("file opened successfully");
   } else {
